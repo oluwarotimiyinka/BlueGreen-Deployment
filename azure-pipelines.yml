@@ -26,6 +26,7 @@ steps:
     publishWebProjects: true
 
 - task: AzureWebApp@1
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/development')
   inputs:
     azureSubscription: 'bluegreenservice'
     appType: 'webAppLinux'
