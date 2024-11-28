@@ -31,6 +31,9 @@ steps:
     azureSubscription: 'bluegreenservice'
     appType: 'webAppLinux'
     appName: 'blue'
+    deployToSlotOrASE: true
+    resourceGroupName: 'DevOps'
+    slotName: 'green'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
 
 - task: AzureAppServiceManage@0
