@@ -13,10 +13,10 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      dotnet --version
-      mkdir AzureWebApp
+      #dotnet --version
+      #mkdir AzureWebApp
       cd AzureWebApp
-      dotnet new webapp -f net8.0
+      #dotnet new webapp -f net8.0
       dotnet build --configuration 'Release'
 
 - task: DotNetCoreCLI@2
@@ -35,3 +35,12 @@ steps:
     resourceGroupName: 'DevOps'
     slotName: 'green'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+
+- task: AzureAppServiceManage@0
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+  inputs:
+    azureSubscription: 'bluegreenservice'
+    Action: 'Swap Slots'
+    WebAppName: 'blue'
+    ResourceGroupName: 'DevOps'
+    SourceSlot: 'green'
