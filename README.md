@@ -19,7 +19,12 @@ The App can be swapped between the two sots.
 14.	Resolve merge conflicts in VS code, merge the development and main branch in Azure DevOps to effect the slots swap.
 
 # Outcome
-<img src= "https://github.com/oluwarotimiyinka/BlueGreen-Deployment/blob/main/Screenshot%202024-11-28%20024318.png" alt="VS Code Merge Conflicts" width="250" height="250">
+
+VS Code Merge Conflicts
+<img src= "https://github.com/oluwarotimiyinka/BlueGreen-Deployment/blob/main/Screenshot%202024-11-28%20024318.png" alt="VS Code Merge Conflicts" width="350" height="350">
+
+Swapped Slot
+<img src= "https://github.com/oluwarotimiyinka/BlueGreen-Deployment/blob/main/Screenshot%202024-11-28%20130257.png" alt="VS Code Merge Conflicts" width="350" height="350">
 
 # Challenge
 Resolving the conflicts while merging the development repository with the main repository from Azure DevOps was challenging.
