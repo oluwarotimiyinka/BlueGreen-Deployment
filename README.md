@@ -2,7 +2,7 @@
 This is a continous deployment project of .Net App in Azure Web Service with production and devlopment Slots.
 The App can be swapped between the two sots.
 
-# STEPS
+### STEPS
 1.	Create a new project project in Azure DevOps and initiated a new git repository with README file.
 2.	Deploy new Azure linux App service
 3.	Create and run a new yaml pipeline with bash commands to install and deploy DotNet 8.0 to the App Service.
@@ -18,7 +18,7 @@ The App can be swapped between the two sots.
 13.	Add branch policy and validation to the development branch
 14.	Resolve merge conflicts in VS code, merge the development and main branch in Azure DevOps to effect the slots swap.
 
-# Outcome
+### Outcome
 
 VS Code Merge Conflicts
 
@@ -28,6 +28,6 @@ Swapped Slot
 
 <img src= "https://github.com/oluwarotimiyinka/BlueGreen-Deployment/blob/main/Screenshot%202024-11-28%20130257.png" alt="VS Code Merge Conflicts" width="350" height="350">
 
-# Challenge
+#### Challenge
 Resolving the conflicts while merging the development repository with the main repository from Azure DevOps was challenging.
 Visual Studio Code conflict editor was used for the merging the changes, and the repository was sychnonized with Azure DevOps repositores before the final merge in Azure DevOps
