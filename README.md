@@ -1,4 +1,4 @@
-# Azure: Blue-Green Deployments
+# Azure: Blue-Green Deployment
 
 ### Introduction 
 This is a continous deployment project of .Net App in Azure Web Service with production and devlopment Slots.
